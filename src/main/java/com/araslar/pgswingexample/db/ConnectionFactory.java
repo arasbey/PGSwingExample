@@ -14,7 +14,7 @@ import java.sql.DriverManager;
  */
 public class ConnectionFactory {
     
-    private static final String url = "jdbc:postgresql://127.0.0.1:5432/javadb";
+    private static final String url = "jdbc:postgresql://localhost:5432/javadb";
     private static final String username = "postgres";
     private static final String password = "postgres";
     
