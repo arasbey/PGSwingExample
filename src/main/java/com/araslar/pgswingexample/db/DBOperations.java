@@ -44,4 +44,11 @@ public class DBOperations {
 
         return true;
     }
+    
+    
+    
+    public boolean update(String sqlQuery) {
+
+        return true;
+    }
 }

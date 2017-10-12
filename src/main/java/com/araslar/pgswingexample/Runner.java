@@ -14,12 +14,16 @@ import com.araslar.pgswingexample.db.DBOperations;
 public class Runner {
     public static void main(String[] args) {
         System.out.println("The application started....");
+        Kisi key = new Kisi();
         
+        key.setAdres("Demetevler Tekirdag");
+        key.setIsim("Aybuke");
+        key.setSoyisim("Aras");
+        key.setTel("050551233344");
         
-        DBOperations dboperation = new DBOperations();
-        String sqlQuery = "insert into kisi (ad,soyad,email,tel,adres)\n" +
-"values ('Mahmut','ZIRLAYAN','mhmtzrlyn@gmail.com','05075343499','demetevler demet')";
-        dboperation.insert(sqlQuery);
+        KisiDBOpts kdbs = new KisiDBOpts();
+        kdbs.kisiEkle(key);
+        System.out.println("Application Completed..");
         
         
         
